@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <title>VueJS avec Grafikart</title>
+    <link rel="stylesheet" href="http://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.6.3/css/font-awesome.min.css">
+    <style>
+        .header.item {
+            background-color: rgb(63, 133, 69);
+            font-size: 40px;
+            height: 60px;
+            font-style: unset;
+            color: white;
+            margin-left: 50px;
+            margin-right: 50px;
+        }
+
+        .main.container {
+            padding-top: 50px;
+        }
+
+        .ui.booleen.message {
+            width: 150px;
+            background-color: yellowgreen;
+        }
+    </style>
+
+</head>
+
+<body>
+    <div class="ui inverted fixed menu">
+        <div class="header item">TUTORIEL Grafikart</div>
+    </div>
+    <div class="ui main container" id="app">
+        <!--deux facons de faire un lien-->
+        <!--v-bind pour faire un lien href-->
+        <!--v-v-model pour changer la valeur du message-->
+        <input type="text" v-model="message">
+        <a v-bind:href="link">{{message}}</a>
+        <a :href="link" :letitre="message">{{message}}</a>
+        <!--Evenement click avec v-on  exemple: v-on:click ou @click-->
+        <!-- <div class="ui sucess message" v-if="booleen">-->
+        <div class="separation">
+            <input type="checkbox" v-model="booleen" v-on:click="close">
+            <div class="ui booleen message" v-if="booleen">
+                <p class="close">Clickez sur le checkbox pour me faire disparaitre</p>
+            </div>
+        </div>
+        <!--v-if ou v-else pour verifier un booleen   v-show pour verifier un booleen et indiquer dans la console none ou pas-->
+        <div class="ui booleen message" v-if="booleen">
+            <p>Super ça marcheeeee!</p>
+        </div>
+        <div class="ui error message" v-else="booleen">
+            <p>Ca ne marche PAS !</p>
+        </div>
+        <!--v-for fait une boucle person in le tableau personnes de Vue du app-->
+        <ul>
+            <li v-for="person in personnes">{{person}}</li>
+        </ul>
+
+    </div>
+
+
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/vue/2.6.10/vue.js"></script>
+    <script src="js/app.js"></script>
+</body>
+
+</html>

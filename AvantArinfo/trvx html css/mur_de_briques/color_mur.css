@@ -1,0 +1,88 @@
+@font-face {
+    font-family: 'hvd_peaceregular';
+    src: url('police/HVD_Peace-webfont.eot');
+    src: url('police/HVD_Peace-webfont.eot?#iefix') format('embedded-opentype'),
+        url('police/HVD_Peace-webfont.woff2') format('woff2'),
+        url('police/HVD_Peace-webfont.woff') format('woff'),
+        url('police/HVD_Peace-webfont.ttf') format('truetype'),
+        url('police/HVD_Peace-webfont.svg#hvd_peaceregular') format('svg');
+    font-weight: normal;
+    font-style: normal;
+
+}
+
+
+.parent {
+
+    width: 945px;
+    height: 282px;
+    background-color: black;
+    justify-content: space-around;
+}
+
+.mur {
+    width: 80px;
+    height: 30px;
+    background-color: darkred;
+    border: solid grey;
+}
+
+.section {
+    display: flex;
+}
+
+.section1 {
+    display: flex;
+}
+
+.mur1 {
+    width: 40px;
+    height: 30px;
+    background-color: darkred;
+    border: solid grey;
+}
+
+h1 {
+    display: flex;
+
+}
+
+.murht {
+
+    width: 80px;
+    height: 30px;
+    background-color: darkred;
+    border: solid grey;
+    border-top: 1px;
+    margin-top: auto;
+
+}
+
+.murbt {
+    width: 80px;
+    height: 30px;
+    background-color: darkred;
+    border: solid grey;
+    border-bottom: 1px;
+    margin-bottom: auto;
+}
+
+.mur1bt {
+    width: 40px;
+    height: 30px;
+    background-color: darkred;
+    border: solid grey;
+    border-bottom: 1px;
+    margin-bottom: auto;
+}
+
+p {
+    position: absolute;
+    margin: auto;
+    top: 92px;
+    left: 279px;
+    font-size: 80px;
+    color: white;
+    font-family: 'hvd_peaceregular';
+
+}

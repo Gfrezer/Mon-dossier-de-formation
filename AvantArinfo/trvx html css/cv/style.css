@@ -1,0 +1,120 @@
+@font-face {
+    font-family: 'berkshire_swashregular';
+    src: url('police/berkshireswash-regular-webfont.eot');
+    src: url('police/berkshireswash-regular-webfont.eot?#iefix') format('embedded-opentype'),
+         url('police/berkshireswash-regular-webfont.woff2') format('woff2'),
+         url('police/berkshireswash-regular-webfont.woff') format('woff'),
+         url('police/berkshireswash-regular-webfont.ttf') format('truetype'),
+         url('police/berkshireswash-regular-webfont.svg#berkshire_swashregular') format('svg');
+    font-weight: normal;
+    font-style: normal;
+
+}
+@font-face {
+    font-family: 'cac_champagneregular';
+    src: url('police_1/cac_champagne-webfont.eot');
+    src: url('police_1/cac_champagne-webfont.eot?#iefix') format('embedded-opentype'),
+         url('police_1/cac_champagne-webfont.woff2') format('woff2'),
+         url('police_1/cac_champagne-webfont.woff') format('woff'),
+         url('police_1/cac_champagne-webfont.ttf') format('truetype'),
+         url('police_1/cac_champagne-webfont.svg#cac_champagneregular') format('svg');
+    font-weight: normal;
+    font-style: normal;
+
+}
+@font-face {
+    font-family: 'gessoregular';
+    src: url('police_2/GESSO___-webfont.eot');
+    src: url('police_2/GESSO___-webfont.eot?#iefix') format('embedded-opentype'),
+         url('police_2/GESSO___-webfont.woff2') format('woff2'),
+         url('police_2/GESSO___-webfont.woff') format('woff'),
+         url('police_2/GESSO___-webfont.ttf') format('truetype'),
+         url('police_2/GESSO___-webfont.svg#gessoregular') format('svg');
+    font-weight: normal;
+    font-style: normal;
+}
+
+body{
+    background-image: url('image/fond_1.jpg');
+    background-attachment: fixed;
+    display: flex;
+    flex-direction: row;
+    margin-top: 0px;
+}
+
+header{
+    background-image: url('image/abstrait_bleu.jpg');    
+    background-repeat: no-repeat;
+    display: flex;
+    background-size: cover;
+
+
+}
+
+
+header span{
+    font-family:'cac_champagneregular';
+    font-size: 2em;
+}
+
+
+header h1{
+    color: red;
+    font-size: 40px;
+    margin-top: 10px;
+    margin-bottom: 15px;
+
+}
+section .lecorps div{
+    width: 30%;
+    text-align: center;
+
+
+
+    
+}
+
+
+
+
+section h3 span{
+    color: blue;
+    border-bottom:  2px solid grey; 
+    border-left: 2px solid grey; 
+    padding: 5px;
+    box-shadow: -3px 3px 5px grey; 
+
+   
+}
+.lisere{
+    width: 25%;
+}
+.titre{
+    width: 50%;
+    text-align: center;
+
+}
+.photo{
+    width: 25%;
+    margin-top: 20px;
+}
+
+.photo img{
+    width: 30%;
+    min-width: 75px
+}
+.lecorps{
+    display: flex;
+   
+
+}
+footer{
+    text-align: center;
+    margin-top: 200px;
+}
+aside{
+    width: 10%;
+    background-color: grey;
+    min-height: 100%;
+
+}

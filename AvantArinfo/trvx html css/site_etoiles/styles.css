@@ -1,0 +1,469 @@
+/*polices*/
+@font-face {
+    font-family: 'berkshire_swashregular';
+    src: url('police/berkshireswash-regular-webfont.eot');
+    src: url('police/berkshireswash-regular-webfont.eot?#iefix') format('embedded-opentype'),
+        url('police/berkshireswash-regular-webfont.woff2') format('woff2'),
+        url('police/berkshireswash-regular-webfont.woff') format('woff'),
+        url('police/berkshireswash-regular-webfont.ttf') format('truetype'),
+        url('police/berkshireswash-regular-webfont.svg#berkshire_swashregular') format('svg');
+    font-weight: normal;
+    font-style: normal;
+
+}
+
+@font-face {
+    font-family: 'cac_champagneregular';
+    src: url('police_1/cac_champagne-webfont.eot');
+    src: url('police_1/cac_champagne-webfont.eot?#iefix') format('embedded-opentype'),
+        url('police_1/cac_champagne-webfont.woff2') format('woff2'),
+        url('police_1/cac_champagne-webfont.woff') format('woff'),
+        url('police_1/cac_champagne-webfont.ttf') format('truetype'),
+        url('police_1/cac_champagne-webfont.svg#cac_champagneregular') format('svg');
+    font-weight: normal;
+    font-style: normal;
+
+}
+
+@font-face {
+    font-family: 'gessoregular';
+    src: url('police_2/GESSO___-webfont.eot');
+    src: url('police_2/GESSO___-webfont.eot?#iefix') format('embedded-opentype'),
+        url('police_2/GESSO___-webfont.woff2') format('woff2'),
+        url('police_2/GESSO___-webfont.woff') format('woff'),
+        url('police_2/GESSO___-webfont.ttf') format('truetype'),
+        url('police_2/GESSO___-webfont.svg#gessoregular') format('svg');
+    font-weight: normal;
+    font-style: normal;
+
+}
+
+/*general*/
+body {
+    width: 1300px;
+    margin-left: auto;
+    margin-right: auto;
+    background-image: url('images/fond_body.jpg');
+    background-attachment: fixed;
+    background-size: cover;
+}
+
+* {
+    margin: 0px;
+    padding: 0px;
+    /*couleur de ref pour les textes principaux*/
+    color: #303254;
+}
+
+p {
+    font-family: cursive;
+}
+
+h2 {
+    font-family: 'berkshire_swashregular';
+    font-size: 30px;
+    text-transform: uppercase;
+    color: chocolate;
+
+}
+
+li {
+    font-family: 'berkshire_swashregular';
+    font-size: 20px;
+    list-style-type: none;
+    color: #303254;
+}
+
+/*header*/
+header {
+    width: auto;
+    height: 200px;
+    background-image: url('images/proxy2_centrale.jpg');
+    background-repeat: no-repeat;
+    margin-top: 200px;
+
+}
+
+.titre {
+    width: 800px;
+    height: 250px;
+    margin: auto;
+    background: rgba(108, 155, 184, 0.4);
+    text-align: center;
+
+}
+
+h1 {
+    font-family: 'gessoregular';
+    color: #F5F511;
+    font-size: 80px;
+    text-shadow: 3px 3px 0.5px white;
+}
+
+span {
+    color: white;
+    font-size: 35px;
+    font-family: 'cac_champagneregular';
+    width: auto;
+}
+
+/*au tout debut*/
+#proxy {
+    height: 300px;    
+    background-size: cover;
+    width: 300px;
+    margin-left: 40px;
+}
+
+.au_tout_debut {
+    background-color: gainsboro;
+    width: auto;
+    height: 300px;
+    margin-top: 250px;
+    display: flex;
+    border-radius: 20px;
+}
+
+.titre_au_tout_debut {
+    height: 20px;
+    padding-bottom: 20px;
+}
+
+.text h2 {
+    border: groove 10px;
+    width: 280px;
+    margin: auto;
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+.text {
+    width: 450px;
+    padding-left: 50px;
+    padding-top: 20px;
+    padding-right: 50px;
+    overflow: auto;
+    text-align: justify;
+}
+
+/*au tout debut aside nebuleuse*/
+.aside_nebu_du_cone {
+    width: 410px;
+    background-color: black;
+    border-radius: 0px 16px 16px 0px;
+
+}
+
+.nebuleuse_cone {
+    width: 300px;
+    height: 290px;
+    background-color: gainsboro;
+    margin: auto;
+    border: solid 5px grey;
+    border-radius: 10px;
+    display: flex;
+    text-align: center;
+}
+
+.du_cone {
+    width: 300px;
+}
+
+.nebula_du_cone {
+    padding-top: 10px;
+    width: 250px;
+
+}
+
+.nebuleuse_cone p {
+    font-family: sans-serif;
+    font-size: 10px;
+    padding: 4px;
+
+}
+/*page de la nebuleuse du cone*/
+.nebula_du_cone_grand{
+    height:600px;
+    margin: auto;
+    
+}
+.nebuleuse_cone_grand{
+    display: flex;
+    flex-direction: column;
+    margin-top: 100px;
+
+}
+.nebuleuse_cone_grand p{
+    color: white;
+    background-color: darkblue;
+    width: 1000px;
+    margin: auto;
+    padding: 20px;
+}
+
+
+
+/*centrale nav + c est quoi*/
+.centrale {
+    width: auto;
+    height: 500px;
+    padding-top: 40px;
+    display: flex;
+    justify-content: space-around;
+
+}
+
+.c_est_quoi {
+
+    border-radius: 20px;
+    width: 1000px;
+    height: auto;
+}
+
+/*nav*/
+
+.navigation {
+    border-radius: 20px 0px 0px 20px;
+    width: 200px;
+    height: auto;
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    border-left: 2px solid white;
+    border-bottom: 2px solid white;
+    box-shadow: -10px 10px 15px white;
+
+}
+
+.liste > li {
+
+    background-color: #E9E9F2;
+    height: 40px;
+    line-height: 40px;
+    margin-bottom: 30px;
+    border: groove 10px;
+    list-style-type: none;
+}
+
+
+
+
+
+.navigation h4 {
+    color: #303254;
+    background-color: #E9E9F2;
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
+
+/*sous onglet*/
+.submenu {
+    display: none;
+    z-index: 100000;
+    position: relative;
+    left: 190px;
+    top: -50px;
+}
+
+.submenu li {
+    background-color: #E9E9F2;
+    height: 40px;
+    line-height: 40px;
+    border: groove 10px;
+
+}
+
+.liste li:hover .submenu {
+    display: block;
+}
+
+/*section c est quoi*/
+.c_est_quoi {
+    display: flex;
+
+}
+
+.liste a {
+    text-decoration: none;
+    display: inline-block;
+}
+
+/*c est quoi text*/
+
+
+.c_quoi_text h2 {
+    float: left;
+    margin-top: 40px;
+    margin-left: 20px;
+    margin-right: 20px;
+    text-align: center;
+}
+
+.c_quoi_text p {
+    text-shadow: 2px 2px 0px black;
+    margin-top: 40px;
+    margin-left: 20px;
+    text-align: justify;
+    width: 420px;
+    color: white;
+
+}
+
+/*differentes*/
+#differentes {
+    width: 300px;
+    height: 390px;
+    background-color: gainsboro;
+    float: right;
+    position: relative;
+    top: 50px;
+    left: 50px;
+}
+
+/*video*/
+.video {
+    width: 250px;
+    height: 250px;
+    background-color: black;
+    border: solid 20px gainsboro;
+    position: relative;
+    left: -30px;
+    top: 220px;
+}
+
+/*sorte etoile image*/
+#differentes {
+    text-align: center;
+    margin-top: 5px;
+    display: flex;
+    flex-direction: column;
+}
+
+#differentes h2 {
+    text-transform: uppercase;
+    padding-top: 15px;
+    font-size: 23px;
+    margin-bottom: 12px;
+
+
+}
+
+.sorte_2 img {
+    width: 110px;
+    height: 80px;
+
+}
+
+.sorte_2 {
+
+    height: 85px;
+
+
+}
+
+.sorte_4 img {
+    width: 90px;
+    height: 65px;
+
+
+}
+
+.sorte_4 {
+    width: 204px;
+    height: 222px;
+    margin-left: 9px;
+
+}
+
+
+
+
+
+
+
+
+
+
+/*footer*/
+footer {
+    width: auto;
+    height: 280px;
+    background-color: gainsboro;
+    margin-top: 40px;
+    margin-bottom: 40px;
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+}
+
+.mois {
+    height: 25px;
+    font-family: sans-serif;
+    margin-left: 15px;
+    margin-top: 15px;
+}
+
+
+/*soleil*/
+.soleil {
+    background-image: url(images/noir-orange.jpg);
+    background-size: cover;
+    width: 200px;
+    height: 150px;
+    margin: auto;
+}
+
+.mercure {
+    background-color: red;
+    width: 8px;
+    height: 8px;
+    border-radius: 50%;
+
+}
+
+form h1 {
+    font-family: serif;
+    color: grey;
+    font-size: 20px;
+    margin-top: 15px;
+    text-align: center;
+    margin-bottom: 10px;
+
+}
+
+h6 {
+    font-size: 15px;
+    color: darkblue;
+}
+
+.formulaire {
+    display: flex;
+    height: 200px;
+    flex-direction: row;
+    margin-top: 20px;
+
+}
+
+.conteneur {
+    width: 300px;
+
+
+}
+
+
+.conteneur1 {
+    margin-top: 10px;
+
+}
+
+.conteneur2 {
+
+
+}
+
+.bouton{
+    width: 60px;
+    height: 30px;
+    margin-left: 50px;
+    margin-top: 30px;
+}

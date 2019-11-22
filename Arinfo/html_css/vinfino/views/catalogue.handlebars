@@ -1,0 +1,41 @@
+<!--CATALOGUE-->
+<div class="container">
+    <div class="row">
+        <div class="col-md-12 img-wine"></div>
+    </div>
+</div>
+
+<div class="container">
+    <div class="row">
+        {{#each posts}}
+        <div class="col-md-4">
+            <img src="{{image}}" alt="profile-sample2" />
+            <figure class="snip1581 figure-card">
+                <figcaption>
+                    <h3 class="title1">{{nom}}</h3>
+                    <h3 class="title2">{{prix}}</h3>
+                    <h3 class="title3">{{millesime}}</h3>
+                </figcaption>
+            </figure>
+
+        </div>
+        {{/each}}
+    </div>
+</div>
+
+
+{{#if users.isAdmin}}
+<a href="/articles/add">
+    <button type="button" class="btn btn-primary"> Ajouter une bouteille </button>
+</a>
+{{/if}}
+<!--BUTTON-->
+<div class="container-btn">
+    <div class="row">
+        <div class="col-md-12 btn">
+            <a href="/user/logout">
+                <button type="button" class="btn btn-primary">deconnexion</button>
+            </a>
+        </div>
+    </div>
+</div>

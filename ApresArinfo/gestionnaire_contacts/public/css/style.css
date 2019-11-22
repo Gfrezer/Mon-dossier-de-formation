@@ -1,0 +1,14 @@
+.fond_du_tableau {
+    background-color: rgb(66, 47, 47);
+}
+
+.container-fluide {
+    background-color: black;
+    height: 1500px;
+}
+
+h2,
+h3,
+tr {
+    color: rgb(102, 98, 92);
+}

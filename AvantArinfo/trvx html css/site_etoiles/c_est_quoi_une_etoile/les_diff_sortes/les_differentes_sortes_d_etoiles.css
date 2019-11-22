@@ -1,0 +1,28 @@
+thead {
+    background-color: brown;
+    color: white;
+    font-size: 30px;
+
+}
+
+tbody {
+    background-color: burlywood;
+}
+
+td,
+th {
+    border: solid 1px red;
+ 
+
+
+}
+
+th {
+    text-align: center;
+    width: 120px;
+    height: 50px;
+}
+
+td {
+    text-align: center;
+}

@@ -1,0 +1,117 @@
+@font-face {
+    font-family: 'berkshire_swashregular';
+    src: url('police/berkshireswash-regular-webfont.eot');
+    src: url('police/police/berkshireswash-regular-webfont.eot?#iefix') format('embedded-opentype'),
+         url('police/berkshireswash-regular-webfont.woff2') format('woff2'),
+         url('police/berkshireswash-regular-webfont.woff') format('woff'),
+         url('police/berkshireswash-regular-webfont.ttf') format('truetype'),
+         url('police/berkshireswash-regular-webfont.svg#berkshire_swashregular') format('svg');
+ 
+}
+
+@font-face {
+    font-family: 'gessoregular';
+    src: url('police_2/GESSO___-webfont.eot');
+    src: url('police_2/GESSO___-webfont.eot?#iefix') format('embedded-opentype'),
+         url('police_2/GESSO___-webfont.woff2') format('woff2'),
+         url('police_2/GESSO___-webfont.woff') format('woff'),
+         url('police_2/GESSO___-webfont.ttf') format('truetype'),
+         url('police_2/GESSO___-webfont.svg#gessoregular') format('svg');
+}
+h1
+{
+	font-family: 'gessoregular';
+	font-size: 4em;
+	color: white;
+	text-align: left;
+	background-image: url(image/ciel.jpg);
+	background-position: center;
+
+}
+div.nom h2 
+{
+	font-family: 'berkshire_swashregular';
+	color:#081C75;
+	font-size: 2em;
+	
+
+}
+.jeune
+{
+	float: right;
+	clear: both;
+}
+
+body
+{
+	background: url(image/fond_1.jpg) fixed no-repeat ;
+	width: 900px;
+	font-size: 12pt;
+	margin-left: auto;
+	margin-right: auto;
+}
+	
+	
+	
+.stitre
+{
+	clear:  both;
+	text-align: left;
+}
+div
+{
+	color: black;
+	font-size: 1em;
+}
+
+h3
+{
+	font-size: 15px;
+	color: blue;		
+	padding: 2px 40px;
+
+
+}
+h3 span 
+{
+	border: blue 2px solid;
+	padding: 5px;
+	display: table;
+	text-align: center;
+	box-shadow: 6px 6px 0px grey;
+
+
+
+}
+
+div.nom + span
+{
+	font-size: 1em;
+	font-family:sans-serif;
+	font-style: italic;
+	border:solid 1px ;
+	border-color: blue;
+	padding: 5px 19px;
+	
+
+}
+
+.pour
+{
+	color: red;
+}
+.mail:hover
+{
+	color: grey
+
+
+}
+.href:visited
+{
+	color: grey;
+}
+ol
+{
+	text-align: left;
+
+}

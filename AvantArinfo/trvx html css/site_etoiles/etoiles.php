@@ -1,0 +1,266 @@
+<?php
+
+if (isset($_POST["envoyer"]))
+         {                            
+            $nom = $_POST["nom"];
+            $prenom = $_POST["prenom"];
+            $age = $_POST["age"];
+            $mail = $_POST["mail"];
+            $password = $_POST["password"];
+            $password_conf = $_POST["password_conf"];
+            $connaissance = $_POST["connaissance"];
+            $comment = $_POST["comment"];
+            $suggestion = $_POST["suggestion"];
+            $bdd = mysqli_connect('localhost','root','','etoiles');    
+            $requete = "INSERT INTO inscription_mag (nom,prenom,age,mail,password,password_conf,connaissance,comment,suggestion) VALUES('$nom','$prenom',$age,'$mail','$password','$password_conf','$connaissance','$comment','$suggestion')";
+    
+            $bdd->query($requete) or die(print_r($bdd->error));
+            mysqli_close($bdd);
+         } 
+
+
+?>
+
+<!DOCTYPE html>
+
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <link rel="stylesheet" href="styles.css">
+    <title>Les Etoiles dans l'univers</title>
+
+</head>
+
+<body>
+    <header>
+        <!--titre-->
+        <div class="titre">
+            <h1>les etoiles dans l'univers</h1>
+            <span>premiers pas dans le monde des etoiles</span>
+        </div>
+    </header>
+
+
+
+    <!--bloc au tout debut-->
+    <section class="au_tout_debut">
+        <!--image liseré-->
+        <div class="lisere">
+            <img id="proxy" src="images_au_tous_debut/proxy_centrale.jpg" />
+
+
+        </div>
+        <div class="text">
+
+
+            <h2 class="titre_au_tout_debut">au tout debut</h2>
+            <button onclick="changeColor('red');">Texte red</button>
+
+            <p id="text_tout_debut"> Toutes les étoiles, et par la même occasion les planètes qui leurs sont liées, naissent dans de gigantesques nuages moléculaires. Ces nuages sont essentiellement composés d’Hydrogène et d’Helium, à savoir les 2 éléments les plus abondants dans l’Univers, et sont extrêmement froids, avec des températures de l’ordre de 10K. Ils ont des tailles pouvant aller d’une fraction de parsec (pc) à plus de 20pc, et peuvent contenir de quelques dizaines à plusieurs milliers de masses solaires (M_sun). Bien que ces nuages soient bien plus compacts que la matière inter-galactique alentour, leur densité est tout de même extrêmement faible comparée à notre environnement quotidien, de l’ordre de seulement 100 à 10 000 atomes d’Hydrogène par cm3. Ceci est à comparer aux quelques 1015 molécules/cm3 de l’atmosphère terrestre ! (En fait, un nuage moléculaire « dense » est bien plus vide que le « vide » à l’intérieur d’une chambre à vide dans un laboratoire !).<br />
+                Ces « nurseries » stellaires sont observées par milliers dans notre galaxie, soit comme des « poches sombres » bloquant la lumière des étoiles situées derrière elles, soit comme de magnifiques nuages éclairées de l’intérieur par les premières étoiles qui s’y sont formées
+            </p>
+
+        </div>
+        <!--nebuleuse du cone-->
+        <aside class="aside_nebu_du_cone">
+            <div class="nebuleuse_cone">
+                <a href="nebuleuse_du_cone.php" class="du_cone">
+                    <img src="images/Nebula_du_cone.jpg" class="nebula_du_cone" alt="nebuleuse_du_cone" title="agrandir" />
+                    <p>La nébuleuse du « Cône », une pépinière de jeunes étoiles.
+                        Crédit : Hubble Space Telescope (NASA)
+                    </p>
+                </a>
+
+            </div>
+        </aside>
+    </section>
+
+
+
+
+
+    <section class="centrale">
+
+        <nav class="navigation">
+            <h4>pour en savoir plus</h4>
+
+
+            <ul class="liste">
+
+                <li class="menu_exo">exocoference
+                    <ul class="submenu">
+                        <li><a href="https://www.theatredurondpoint.fr/spectacle/lexoconference/">spectacle</a></li>
+                        <li><a href="https://youtu.be/--IpfSCl2ok">klein</a></li>
+                        <li><a href="https://youtu.be/isY82PUvYNM">reponse sur l'exo</a></li>
+                    </ul>
+                </li>
+
+
+                <li class="pensee_de_pascal">pensee de pascal
+                    <ul class="submenu">
+                        <li><a href="https://www.les-philosophes.fr/auteur-pascal.html">Qui est Pascal?</a> </li>
+                        <li><a href="pensée_de_pascal">Pensée de Pascal</a> </li>
+                        <li><a href="https://citations.ouest-france.fr/citations-blaise-pascal-637.html">Les Grandes Phrases</a> </li>
+                    </ul>
+                </li>
+
+
+                <li class="model_standart">model standart
+                    <ul class="submenu">
+                        <li><a href="c_est_quoi">C'est Quoi?</a> </li>
+                        <li><a href="tableau">Tableau</a> </li>
+                    </ul>
+                </li>
+
+
+                <li class="bigbang">bigbang
+                    <ul class="submenu">
+                        <li><a href="c_est_quoi.html">C'est Quoi?</a> </li>
+                        <li><a href="evolution">Evolution</a> </li>
+                    </ul>
+                </li>
+
+
+                <li class="mur_de_planck">mur de planck
+                    <ul class="submenu">
+                        <li><a href="c_est_quoi">C'est Quoi?</a> </li>
+                        <li><a href="qui_est_planck">Qui est Planck?</a> </li>
+                    </ul>
+                </li>
+            </ul>
+        </nav>
+
+        <section class="c_est_quoi">
+
+            <div class="c_quoi_text">
+
+                <h2>c est quoi<br>une<br>etoile?</h2>
+                <p>Une étoile est une boule de gaz très chaude : plusieurs millions de degrés au centre (température qui est suffisante pour déclencher des réactions nucléaires), plusieurs milliers de degrés en surface.
+                    Dans une étoile, l'équilibre est obtenu entre deux forces opposées : la pesanteur précipite la matière vers le centre alors que la pression repousse cette matière. La durée de vie des étoiles est limitée : lorsqu'elles ont transformé tout leur hydrogène en hélium (ce qui dure plusieurs milliards d'années), elles gonflent et deviennent des géantes rouges.
+                    Selon leur masse initiale, elles mourront ensuite discrètement en naines blanches ou de façon spectaculaire en supernova ; dans ce second cas leur agonie peut même les conduire au stade de trous noirs.
+                </p>
+
+            </div>
+
+
+
+
+            <article id="differentes">
+                <h2><a href="c_est_quoi_une_etoile/les_diff_sortes/les_differentes_sortes_d_etoiles.html">les differentes sortes d'etoiles</a>
+
+                </h2>
+
+                <div class="sorte_2">
+                    <img src="images/sorte_1.jpg" alt="sorte_1.jpg">
+                    <img src="images/sorte_2.jpg" alt="sorte_2.jpg">
+                </div>
+                <div class="sorte_4">
+                    <img src="images/sorte_3.jpg" alt="sorte_3.jpg">
+                    <img src="images/sorte_4.jpg" alt="sorte_4.jpg">
+                    <img src="images/sorte_5.jpg" alt="sorte_5.jpg">
+                    <img src="images/sorte_6.jpg" alt="sorte_6.jpg">
+                    <img src="images/sorte_7.jpg" alt="sorte_7.jpg">
+                    <img src="images/sorte_8.jpg" alt="sorte_8.jpg">
+                </div>
+
+            </article>
+
+            <video class="video" autoplay loop>
+                <source src="c_est_quoi_une_etoile/azer.webmhd.webm">
+                <source src="c_est_quoi_une_etoile/azer.mp4"> </video>
+
+        </section>
+
+
+
+
+    </section>
+
+
+    <footer class="footer">
+        <h4 class="mois" onclick="mois()">rentrez le chiffre pour le mois</h4>
+
+
+
+        <form method="post" action="etoiles.php">
+            <h3>Formulaire d'inscription au magazine "Les Etoiles dans l'univers"</h3>
+            <div class="formulaire">
+                <div class="conteneur">
+
+                    <label for="votre nom">Votre nom :</label>
+                    <input type="text" name="nom" /><br>
+
+                    <label>Votre prenom :</label>
+                    <input type="text" name="prenom" placeholder="votre Prenom" /><br>
+
+                    <label>Votre age :</label>
+                    <input type="number" name="age" placeholder="votre age" style="width: 80px" /><br>
+
+                    <label>Adresse Mail :</label>
+                    <input type="email" name="mail" placeholder="votre mail" /><br>
+
+                    <label>Votre Mot de Passe :</label>
+                    <input type="password" name="password" required /><br />
+
+                    <label>Confirmez votre Mot de Passe :</label>
+                    <input type="password" name="password_conf" required />
+
+
+                    <div class="conteneur1" name="connaissance">
+                        <h6>Entre nous...</h6>
+                        <label>Vos connaissances en astronomie ?</label><br />
+                        <input type="radio" name="connaissance" value="debutant" checked /><label>Debutant</label>
+                        <input type="radio" name="connaissance" value="confirme" /><label>confirmé</label>
+                        <input type="radio" name="connaissance" value="expert" /><label>expert</label><br>
+                    </div>
+                </div>
+
+                <div class="entre_nous">
+
+                    <div class="conteneur2">
+                        <h6>Comment avez vous connu le site ?</h6>
+                        <select name="comment">
+                            <option value="par un ami">Par un ami </option>
+                            <option value="dans un magazine">Dans un magazine</option>
+                            <option value="sur un autre site>">Sur un autre site</option>
+                            <option value="par hasard">Par hasard</option>
+                        </select><br /><br /><br /><br /><br />
+                        <label>Laissez une suggestion</label><br />
+                        <textarea name="suggestion" rows="4" cols="50"></textarea>
+                        <input id="bouton" class="bouton" type="submit" name="envoyer" value="Envoyer">
+                        <?php
+                        if (isset($_POST["envoyer"])){
+                            ?>
+
+                        <span class="mess_submit"> le formulaire est bien envoyé
+                        </span>
+                        
+                        <?php } ?>
+
+
+
+
+                    </div>
+                </div>
+
+
+
+
+
+
+            </div>
+
+        </form>
+    </footer>
+
+
+
+
+
+
+
+</body>
+<script type="text/javascript" src="script.js"></script>
+
+</html>

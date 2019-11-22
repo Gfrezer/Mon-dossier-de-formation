@@ -1,0 +1,55 @@
+<section class="container-fluide">
+    <div class="fond_du_tableau">
+        <h2>Gestionnaire des contacts</h2>
+        {{#if afficher}}
+        <h3>contact bien ajouté !</h3>
+        {{/if}}
+        <table class="table">
+            <thead>
+                <tr>
+                    <th scope="row">Numero</th>
+                    <th scope="col">Nom</th>
+                    <th scope="col">Prénom</th>
+                    <th scope="col">Téléphone</th>
+                    <th scope="col">Région</th>
+                </tr>
+            </thead>
+            <tbody>
+                {{#each gestionnaireDeContacts.contacts}}
+                <tr class="{{id}}">
+                    <th scope="row">1</th>
+                    <td class="nom">{{nom}}</td>
+                    <td>{{prenom}}</td>
+                    <td>{{telephone.numero}}
+                        {{#if telephone.mobile}}
+                        <h3>Portable</h3>
+                        {{/if}}
+                    </td>
+                    <td>{{telephone.region}}</td>
+                    <td><button class="boutonXHR">Supprimer par XHR</button></td>
+                    <td>
+                        <form method="POST" action="/delete">
+                            <input type="hidden" name="nom" value="{{nom}}">
+                            <input type="submit" class="supprimer" value="Supprimer par POST">
+                        </form>
+                    </td>
+                    <td>
+                        <a href="/delete/{{nom}}">Supprimer par lien</a>
+                    </td>
+                    <td>
+                        <a href="">Supprimer contact Json</a>
+                    </td>
+                </tr>
+                {{/each}}
+            </tbody>
+        </table>
+        <bouton>
+            <a href="formulaire">
+                <p>formulaire</p>
+            </a>
+        </bouton>
+
+        <button id="clickMe">Cliquez moi !!</button>
+    </div>
+</section>
+<script src="/js/tableau.js"></script>

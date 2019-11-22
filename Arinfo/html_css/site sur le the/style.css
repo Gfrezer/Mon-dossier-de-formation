@@ -1,0 +1,67 @@
+@font-face {
+    font-family: 'cac_champagneregular';
+    src: url('polices/cac_champagne-webfont.eot');
+    src: url('polices/cac_champagne-webfont.eot?#iefix') format('embedded-opentype'),
+        url('polices/cac_champagne-webfont.woff') format('woff'),
+        url('polices/cac_champagne-webfont.ttf') format('truetype'),
+        url('polices/cac_champagne-webfont.svg#cac_champagneregular') format('svg');
+}
+
+
+body{
+    background-color: blanchedalmond;
+    width: 1300px;
+}
+/*page du hautr*/
+.fond_text{
+    background-image: url(images/fond_titre.jpeg);
+    height: 100px;
+    width: 800px;
+    margin: auto;
+}
+h1 {
+    color: #2e3480;
+    font-size: 50px;
+    text-align: right;
+    position: relative;
+    top: 35px;
+    
+
+}
+/*j adore coder*/
+h2 {
+    font-family: "cac_champagneregular";
+    position: relative;
+    color: #272796;
+    font-size: 40px;
+    -webkit-transform: rotate(-15deg);
+
+
+}
+.photo_fille{
+    height: 600px;
+    margin-top: 50px;
+   
+}
+/*div conteneur*/
+.page_du_haut{
+    display: flex;
+    justify-content: space-around;
+
+}
+.text{
+    width: 200px
+}
+
+/*lien page du the*/
+.page_du_haut a{
+    color: red;
+    position: relative;
+    margin-top: 200px;
+    margin-left: 50px
+    
+    
+    
+    
+    
+}
