@@ -14,4 +14,4 @@ Les dossiers les plus importants sont :
   javascript client, ainsi que des possibilités de l'AJAX et de la modification du DOM. Je voulais 
   expérimenter cela avant de passer à VueJS
 
-- Depuis ces trois périodes je travail sur les applications qui sont dans mon en repo github.
+- Depuis ces trois périodes je travaille sur les applications qui sont dans le repo github.
