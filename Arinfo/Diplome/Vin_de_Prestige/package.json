@@ -27,7 +27,7 @@
     "morgan": "^1.9.1",
     "nodemailer": "^6.3.0",
     "snyk": "^1.226.0",
-    "validator": "^10.11.0",
+    "validator": "^13.7.0",
     "video.js": "^7.6.0"
   }
 }
